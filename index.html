@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="upper">
+        <div class="notify fwb">
+          Notifications<span class="notifyAmount">3</span>
+        </div>
+        <span class="markAll link slightFade">Mark all as read</span>
+      </section>
+      <section class="scroll">
+        <div class="notification unread">
+          <img src="assets\images\avatar-mark-webber.webp" alt="" class="pfp" />
+          <div class="notifContainer">
+            <div class="inner">
+              <div class="user link pl fwb">Mark Webber</div>
+              <span class="slightFade">reacted to your recent post</span>
+              <div class="post link pl fwb">My first tournament today!</div>
+              <div class="readIndicator"></div>
+            </div>
+            <div class="timestamp faded pl">1m ago</div>
+          </div>
+        </div>
+        <div class="notification unread">
+          <img src="assets/images/avatar-angela-gray.webp" alt="" class="pfp" />
+          <div class="notifContainer">
+            <div class="inner">
+              <div class="user link pl fwb">Angela Gray</div>
+              <span class="slightFade">followed you</span>
+              <div class="readIndicator"></div>
+            </div>
+            <div class="timestamp faded pl">5m ago</div>
+          </div>
+        </div>
+        <div class="notification unread">
+          <img
+            src="assets/images/avatar-jacob-thompson.webp"
+            alt=""
+            class="pfp"
+          />
+          <div class="notifContainer">
+            <div class="inner">
+              <div class="user link pl fwb">Jacob Thompson</div>
+              <span class="slightFade">
+                has joined your group
+                <span class="chessClub link fwb gb">Chess Club</span></span
+              ><div class="readIndicator"></div>
+            </div>
+            <div class="timestamp faded pl">1 day ago</div>
+          </div>
+        </div>
+        <div class="notification">
+          <img
+            src="assets/images/avatar-rizky-hasanuddin.webp"
+            alt=""
+            class="pfp"
+          />
+          <div class="notifContainer">
+            <div class="inner">
+              <div class="user link pl fwb">Rizky Hasanuddin</div>
+              <span class="slightFade">sent you a private message</span>
+            </div>
+            <div class="timestamp faded pl">5 days ago</div>
+            <p class="message slightFade">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </div>
+        <div class="notification">
+          <img
+            src="assets/images/avatar-kimberly-smith.webp"
+            alt=""
+            class="pfp"
+          />
+          <div class="notifContainer">
+            <div class="inner">
+              <div class="user link pl fwb">Kimberly Smith</div>
+              <span class="slightFade">commented on your picture</span>
+            </div>
+            <div class="timestamp faded pl">1 week ago</div>
+          </div>
+          <img src="./assets/images/image-chess.webp" alt="" class="yourPhoto link">
+        </div>
+        <div class="notification">
+          <img
+            src="assets/images/avatar-nathan-peterson.webp"
+            alt=""
+            class="pfp"
+          />
+          <div class="notifContainer">
+            <div class="inner">
+              <div class="user link pl fwb">Nathan Peterson</div>
+              <span class="slightFade">reacted to your recent post</span>
+              <span class="post link pl fwb faded"
+                >5 end-game strategies to increase your win rate</span
+              >
+            </div>
+            <div class="timestamp faded pl">1m ago</div>
+          </div>
+        </div>
+        <div class="notification">
+          <img src="assets/images/avatar-anna-kim.webp" alt="" class="pfp" />
+          <div class="notifContainer">
+            <div class="inner">
+              <div class="user link pl fwb">Anna Kim</div>
+              <span class="slightFade"
+                >left the group
+                <span class="chessClub link fwb gb">Chess Club</span></span
+              >
+            </div>
+            <div class="timestamp faded pl">2 weeks ago</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

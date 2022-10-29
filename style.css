@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+body {
+  background-color: hsl(210, 60%, 98%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* MAIN */
+
+.wrapper {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 65%;
+  height: fit-content;
+  padding: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* ----Header/Upper---- */
+.upper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 5% 5%;
+}
+
+.notify {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.notifyAmount {
+  height: 1.25rem;
+  width: 1.5rem;
+  text-align: center;
+  margin-left: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: hsl(224, 21%, 14%);
+  color: hsl(210, 60%, 98%);
+  border-radius: 15%;
+}
+
+.markAll {
+  font-size: 0.75rem;
+}
+
+/* ----END Header/Upper---- */
+
+/* ----Notices section---- */
+.notification {
+  background-color: hsla(0, 0%, 95%, 0.375);
+  border-radius: 10px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.5rem 0.5rem;
+  margin: 5px 5px;
+  width: 98%;
+}
+
+.notification.unread {
+  background-color: hsla(211, 24%, 78%, 0.24);
+}
+
+.notifContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+}
+
+.pfp {
+  align-self: flex-start;
+  height: 2rem;
+  margin-right: 10px;
+}
+
+.message {
+  border: 1px solid hsl(205, 33%, 90%);
+  margin: 0.5rem 0.5rem;
+  padding: 1rem 1rem;
+  align-self: center;
+  width: 95%;
+}
+
+.yourPhoto {
+  height: 2rem;
+  margin-left: auto;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.readIndicator {
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-left: 0.25rem;
+  background-color: orange;
+  border-radius: 50%;
+  align-self: center;
+}
+
+/* ----END Notice section---- */
+
+/* UTIL */
+.pl {
+  padding: 0 0.25rem;
+}
+
+.fwb {
+  font-weight: 800;
+}
+
+.gb {
+  color: hsl(224, 21%, 14%);
+}
+
+.slightFade {
+  color: hsl(219, 12%, 42%);
+}
+
+.faded {
+  color: hsl(219, 14%, 63%);
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    background-color: hsl(0, 7%, 94%);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    overflow: scroll;
+  }
+
+  /* ----Header/Upper---- */
+  .upper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* margin: 5% 5%; */
+  }
+
+  .notify {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .notifyAmount {
+    height: 1.25rem;
+    width: 1.5rem;
+    text-align: center;
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: hsl(224, 21%, 14%);
+    color: hsl(210, 60%, 98%);
+    border-radius: 15%;
+  }
+
+  .markAll {
+    font-size: 0.75rem;
+  }
+
+  /* ----END Header/Upper---- */
+
+  .notification {
+    background-color: hsla(0, 0%, 95%, 0.375);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0.5rem 0.5rem;
+    margin: 5px 5px;
+    width: auto;
+  }
+
+  .readIndicator{
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user{
+    display: inline;
+  }
+
+  .pfp {
+    height: 2rem;
+    margin-right: 10px;
+  }
+
+  .message {
+    border: 1px solid hsl(205, 33%, 90%);
+    margin: 0.5rem 0.5rem;
+    padding: 1rem 1rem;
+    align-self: center;
+    width: 95%;
+  }
+
+  .yourPhoto {
+    height: 2rem;
+    margin-left: auto;
+  }
+
+  .link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .readIndicator {
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-left: 0.25rem;
+    background-color: orange;
+    border-radius: 50%;
+  }
+
+  .slightFade{
+    padding: 0 .25rem;
+  }
+}
